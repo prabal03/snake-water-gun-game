@@ -1,6 +1,6 @@
+from random import choice
 print('%50s' % 'Snake Water Gun Game')
 print('Rule:\n1.Snake vs Water: Snake wins\n2.snake vs Gun: Gun wins\n3.Water vs Gun: Water wins')
-from random import choice
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
 
     for i in range(c):
         randomly = choice(['Snake', 'Water', 'Gun'])
-        user = input('\nenter the choices from the following\ns for snake\nw for water\ng for gun\ninput='.lower())
+        user = input('\nenter the choices from the following\ns for snake\nw for water\ng for gun\ninput=').lower()
         if randomly == 'Snake' and user == 's':
             print(f'\nmatch is draw. computer point is: {r} and your point is: {u} ')
             c = c - 1
@@ -69,7 +69,7 @@ def main():
 
 main()
 s = input('\n\ndo you want to run again\npress y for yes or n for no=')
-if s == 'y':
+if s == 'y' or s == 'Y':
     main()
 else:
     print('\nGAME IS OVER!!')
